@@ -1,0 +1,36 @@
+/*
+Write a Java program that uses a for-loop to print all numbers, followed by a space, that can be evenly divided by 7 between 10 
+and 70 inclusive.
+*/
+
+public class Loop
+{
+    public static void main (String [] args)
+    {
+     
+        int div1 = 7;
+        int result1 = 0;
+           
+        
+        for (int count = 10; count <=70; count++)
+        {
+        
+        
+     result1 = count % div1;
+     
+     if (result1 == 0)
+        {
+    System.out.print (" "+count);
+        }
+        
+        
+        
+        }
+        
+       
+    
+       
+
+        
+    }
+}
