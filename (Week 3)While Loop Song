@@ -1,0 +1,44 @@
+/*
+Write a Java program that uses a while loop to print out the following song:
+
+10 in a bed and the little one said,
+
+'Roll over, roll over'
+
+They all rolled over and one fell out,
+
+9 in a bed and the little one said,
+'Roll over, roll over'
+
+They all rolled over and one fell out,
+
+8 in a bed and the little one said,
+
+...
+*/
+
+public class Song 
+{
+    public static void main (String [] args)
+    {
+        int num = 10;
+        
+        while (num>=1)
+    {
+        System.out.println (num + " in the bed and the little one said," );
+        if (num > 1)
+        {
+            System.out.println ("'Roll over, roll over' \n They all rolled over and one fell out," );
+        }
+        if (num == 1)
+        {
+            System.out.println ("'Alone at last'");
+        }
+     
+        num--;
+    }
+     
+     
+    }
+    
+}
