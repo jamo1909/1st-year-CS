@@ -1,0 +1,30 @@
+/*
+Write a Java program that uses an int num that stores a 3 digit number. Your program should then break up this number using the modulos 
+operator into its component digits and print the message exactly as given below. Make sure to test your program with another 
+3 digit number! 
+*/
+
+public class UsingMod
+{
+    public static void main (String [] args)
+    {
+        int num = 123;
+        int lastnumber = 0;
+        lastnumber = num % 10;
+       
+      
+        int middlenumber = 0;
+        num = num / 10;
+        middlenumber = num % 10;
+        
+        int firstnumber = 0;
+        firstnumber = num / 10;
+        
+        System.out.println ("The digits in the number 123 are :");
+        System.out.println (firstnumber);
+        System.out.println (middlenumber);
+        System.out.println (lastnumber);
+      
+        
+    }
+}
