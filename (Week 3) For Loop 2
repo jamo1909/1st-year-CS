@@ -1,0 +1,44 @@
+/*
+Write a Java program that uses a for-loop to compute:
+i) The sum of all numbers divisible by 13 between 1 and 100 (inclusive) and 
+ii)The sum of all numbers squared between 1 and 100 (inclusive).
+You can do this with two loops but as a challenge can you do it with one loop?
+*/
+
+public class ForLoop
+{
+    public static void main (String [] args)
+    {
+        int div1 = 13;
+        int result = 0;
+        int result2 = 0;
+        
+        
+        
+        
+        for (int count = 1; count <= 100; count++)
+        {
+            
+            if (count % div1 == 0)
+            {
+            result += count;
+            }
+            
+            result2 = count*count + result2;
+
+        
+        }
+        System.out.println ("The sum of all numbers divisible by " + div1 +" is " +result);
+        System.out.print  ("The sum of all squares is " + result2);
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    }
+}
