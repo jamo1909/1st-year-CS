@@ -1,0 +1,49 @@
+/*
+Write a Java program that checks if a user inputted String starts with a 'T' and ends with a 'd'.
+
+If the String starts and ends with a 'T' and 'd' respectively then print to the screen: 
+"This String starts with T and ends with d"
+
+If the String starts with a 'T' and doesn't end with 'd' then print to the screen:
+"This String starts with T"
+
+If the String doesn't start with a 'T' but ends with 'd' then print to the screen:
+"This String ends with d"
+
+Otherwise print to the screen: "This String DOES NOT start with T or end with d"
+*/
+
+import java.util.Scanner;
+public class input2
+{
+    public static void main (String [] args)
+    {
+        Scanner scan = new Scanner (System.in);
+        String sent = scan.nextLine ();
+        int len1 = sent.length();
+        char firstletter = sent.charAt (0);
+        char lastletter = sent.charAt(len1-1);
+        char t = 'T';
+        char d = 'd';
+       
+        
+        
+        
+        if (firstletter == t && lastletter == d)
+        {
+            System.out.println ("This String starts with T and ends with d");
+        }
+        else if (firstletter == t && lastletter != d)
+        {
+            System.out.println ("This String starts with T");
+        }
+        else if (firstletter!=t &&lastletter == d )
+        {
+            System.out.println ("This String ends with d");
+        }
+        else if (firstletter != t && lastletter != d)
+        {
+            System.out.println ("This String DOES NOT start with T or end with d");
+        }
+    }
+}
