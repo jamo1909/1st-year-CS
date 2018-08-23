@@ -1,0 +1,16 @@
+/*
+Write a Java program that will print out the contents of a string in reverse order with each word being put on a line of its own.
+*/
+
+public class String3
+{
+    pubblic static void main (String [] args)
+    {
+        String s1 = new String ("my name is aisling");
+        int i = 0;
+        
+        for (i=18; i<s1.length (); 1--)
+        {
+           System.out.print ("s1.charAt (i)); 
+        }
+    }
