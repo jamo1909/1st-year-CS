@@ -1,0 +1,61 @@
+/*
+Write a Java program that will: 
+
+Create an array of a size that is decided by user input.
+Allow the user to fill the array with integers of their choice.
+Print to the screen the sum and product of all the elements of the array
+See the sample output for the format.
+Print to the screen the largest number of the user's inputted numbers.
+See sample output.
+*/
+
+import java.util.Scanner;
+public class SumProduct
+{
+public static void main (String [] args)
+{
+    Scanner input = new Scanner (System.in);
+   // System.out.println ("Enter size of array");
+    int size = input.nextInt ();
+    int array [] = new int [size];
+    int sum =0;
+    int product =1;
+    
+    //System.out.println ("Enter numbers for array");
+    for (int i = 0; i < array.length; i++)
+    {
+    array [i] = input.nextInt();
+    sum += array [i];
+    }
+    
+    for (int i = 0; i < array.length; i++)
+    {
+   // array [i] = input.nextInt();
+    product =  array [i] * product; 
+    }
+    
+    System.out.println ("Sum: " + sum);
+     System.out.println ("Product: " + product);
+     
+     int biggest = 0;
+     int index = 0;
+     biggest = array[0];
+     
+     for (int i = 0; i < array.length; i++)
+     {
+         if (array [i] > biggest)
+         {
+             biggest = array [i];
+         }
+     }
+     System.out.println ("Largest Number: " + biggest);
+     
+     
+   // for (int i = 0; i < array.length; i++)
+   // {
+    //  System.out.print (array[i]);
+   // }
+      
+}
+  
+}
